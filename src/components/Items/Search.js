@@ -11,18 +11,19 @@ const Search = React.memo(props => {
     const timer = setTimeout(() => {
       if (enteredFilter === inputRef.current.value) {
         
-        if(enteredFilter.length===0){
-          searchItem(items)
-        }else{
+        // if(enteredFilter.length===0){
+        //   searchItem(items)
+        // }else{
           const data=items.filter(e=>e.title.includes(enteredFilter))
           searchItem(data)
-        }
+        // }
       }
     }, 500);
     return () => {
       clearTimeout(timer);
     };
-  }, [enteredFilter, searchItem, inputRef,items]);
+     // eslint-disable-next-line
+  }, [enteredFilter, searchItem, inputRef]);
 
   return (
     <section className="search">
