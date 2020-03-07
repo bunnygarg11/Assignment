@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import LoadingIndicator from "../UI/LoadingIndicator";
+import LoadingIndicator from "../Utils/LoadingIndicator";
 import "./ItemsForm.css";
 
 const ItemForm = React.memo(props => {

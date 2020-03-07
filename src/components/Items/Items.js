@@ -2,7 +2,7 @@ import React, { useReducer,  useCallback, useMemo } from 'react';
 
 import ItemForm from './ItemForm';
 import ItemList from './ItemList';
-import ErrorModal from '../UI/ErrorModal';
+import ErrorModal from '../Utils/ErrorModal';
 import Search from './Search';
 
 const itemReducer = (curItems, action) => {
