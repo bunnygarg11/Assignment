@@ -8,7 +8,7 @@ const ItemList = props => {
   // const[sortQty,setsortQty]=useState(false)
 
   return (
-    <section className="list">
+  props.items.length>0 &&  ( <section className="list">
       <h2>Added Items</h2>
 
       <div style={{display:"flex", justifyContent:"space-between"}}>
@@ -31,7 +31,7 @@ const ItemList = props => {
           </li>
         ))}
       </ul>
-    </section>
+    </section>)
   );
 };
 
